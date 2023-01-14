@@ -48,7 +48,7 @@ public class Node<K, V> {
         // StringBuilder class can boost performance when concatenating many strings
         // together in a loop
         StringBuilder nodeString = new StringBuilder();
-        nodeString.append(" \n Node1{" + "K=").append(key).append(" V=").append(value).append("}");
+        nodeString.append(" \n Node{" + "K=").append(key).append(" V=").append(value).append("}");
         if (next != null)
             nodeString.append("->").append(next);
         return nodeString.toString();
